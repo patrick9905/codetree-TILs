@@ -1,9 +1,9 @@
 n=int(input())
-arr=[]
-for i in range(n):
-    a=int(input())
-    if a%2==0:
-        arr.append(a)
+arr=(input().split())
+arrn=[]
+for i in arr:
+    if int(i)%2==0:
+        arrn.append(i)
 
-for i in arr[::-1]:
+for i in arrn[::-1]:
     print(i,end='')
