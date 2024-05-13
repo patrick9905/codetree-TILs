@@ -6,4 +6,4 @@ for i in arr:
         arrn.append(i)
 
 for i in arrn[::-1]:
-    print(i,end='')
+    print(i,end=' ')
