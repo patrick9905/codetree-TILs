@@ -1,5 +1,5 @@
 n=int(input())
-arr=(input().split())
+arr=list(map(int,input().split()))
 arrn=[]
 for i in arr:
     if int(i)%2==0:
