@@ -1,7 +1,7 @@
 n,t=tuple(map(int,input().split()))
 r,c,d=tuple(input().split())
 
-D={'R':0,'D':1,'U':2,'L':3}
+D={'R':1,'D':3,'U':0,'L':2}
 r=int(r)-1
 c=int(c)-1
 dxs, dys = [0, 1, -1, 0], [-1, 0, 0, 1]
@@ -12,7 +12,7 @@ i=0
 move_dir=D[d]
 for _ in range(t):
 
-    nx,ny=r+dxs[move_dir],c+dys[move_dir]
+    nx,ny=r+dys[move_dir],c+dxs[move_dir]
     if not in_range(nx,ny):
         move_dir=3-move_dir
     else:
