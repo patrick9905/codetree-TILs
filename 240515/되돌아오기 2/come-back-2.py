@@ -16,5 +16,6 @@ for i in range(len(n)):
     if x==0 and y==0:
         re_home=True
         print(t)
+        break
 if not re_home:
     print(-1)
