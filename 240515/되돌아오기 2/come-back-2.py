@@ -2,6 +2,7 @@ n=input()
 x,y=0,0
 dx,dy=[1,0,-1,0],[0,-1,0,1]
 dir_num=3
+re_home=False
 t=0
 for i in range(len(n)):
     if n[i]=='F':
@@ -13,5 +14,7 @@ for i in range(len(n)):
         dir_num=(dir_num+3)%4
     t+=1
     if x==0 and y==0:
+        re_home=True
         print(t)
-print(-1)
+if not re_home:
+    print(-1)
