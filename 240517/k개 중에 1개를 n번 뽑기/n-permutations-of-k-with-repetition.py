@@ -1,19 +1,16 @@
 k,n=tuple(map(int,input().split()))
 
 a=[]
-def print1():
-    for i in a:
-        print(i,end=' ')
-    print()
-
 def choose(num):
-    if num>=n+1:
-        print1()
+    if num>=n:
+        print(*a)
         return
     for i in range(1,k+1):
+        if num>=2 and a[-1]==a[-2] and a[-1]==i:
+            continue
         a.append(i)
         choose(num+1)
         a.pop()
     return
 
-choose(1)
+choose(0)
