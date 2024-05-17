@@ -11,6 +11,6 @@ def choose(num):
         a.append(i)
         choose(num+1)
         a.pop()
-    return
+
 
 choose(0)
