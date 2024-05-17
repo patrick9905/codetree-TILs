@@ -10,7 +10,7 @@ def choose(num):
     if num>=n+1:
         print1()
         return
-    for i in range(1,n+1):
+    for i in range(1,k+1):
         a.append(i)
         choose(num+1)
         a.pop()
