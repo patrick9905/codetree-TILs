@@ -4,8 +4,6 @@ a = list(map(int, input().split()))
 b = list(map(int, input().split()))
 a = a + b
 
-if t > 6:
-    t = t % 6
 
 for _ in range(t):
     tmp = a[-1]
