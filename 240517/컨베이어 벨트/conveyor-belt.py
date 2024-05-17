@@ -15,6 +15,6 @@ for _ in range(t):
 
 for i in range(n):
     print(a[i], end=' ')
-
+print('')
 for i in range(n):
     print(a[i+n], end=' ')
