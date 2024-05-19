@@ -13,6 +13,7 @@ for i in arr:
 for i in range(n):
     if arr[i]==max1:
         arr[i]=min
+        break
 
 max2=arr[0]
 for j in range(n):
