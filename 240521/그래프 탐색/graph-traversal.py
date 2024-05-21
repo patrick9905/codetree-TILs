@@ -15,4 +15,4 @@ def dfs(v):
 
 visited[1] = 1  # 시작 노드를 방문 표시
 dfs(1)
-print(sum(visited))  # 방문한 노드의 개수를 출력
+print(sum(visited)-1)  # 방문한 노드의 개수를 출력
