@@ -1,5 +1,6 @@
+memo=[-1]*45
 def pibo(n):
-    memo=[-1]*45
+    
     if memo[n]!=-1:
         return memo[n]
     if n<=2:
