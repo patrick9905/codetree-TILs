@@ -1,4 +1,4 @@
-memo=[-1]*45
+memo=[-1]*100
 def pibo(n):
     
     if memo[n]!=-1:
