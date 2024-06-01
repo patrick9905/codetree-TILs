@@ -1,14 +1,7 @@
-memo=[-1]*100
-def pibo(n):
-    
-    if memo[n]!=-1:
-        return memo[n]
-    if n<=2:
-        memo[n]=1
-    else:
-        memo[n]=pibo(n-1)+pibo(n-2)
-    return memo[n]
-
-
+dp=[0]*100
+dp[1]=1
+dp[2]=1
+for u in range(3,n+1):
+    dp[u]=dp[u-2]+dp[u-1]
 n=int(input())
-print(pibo(n))
+print(dp(n))
